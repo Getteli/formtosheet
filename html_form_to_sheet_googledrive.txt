@@ -1,0 +1,29 @@
+formulario html:
+	<form name="submit-to-google-sheet" class="form-sugestion">
+	</form>
+
+script js pra enviar para a planilha:
+<script>
+	// clique em implantar (no script.google) para obter a url
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwV4lhAHPtgCUEnSlw0Dm7nSiMG0sMBwHQs1M90vXkuEORfXQtr8EdQu5btGd9cIOPRIw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+	var formData = new FormData(form);
+	var data = {};
+
+	for (var [key, value] of formData.entries()) {
+		data[key] = value;
+	}
+	var data = JSON.stringify(data);
+
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: data})
+      .then(response =>
+		alert("Feito! obrigado pela dica. Entraremos em contato com eles.")
+	  )
+      .catch(error =>
+		alert("Ops. Não conseguimos receber essa informação, tente novamente ou entre em contato pelo email: contato@cashbackdoleao.com.br")
+	  )
+  })
+</script>
