@@ -19,7 +19,8 @@ To create a tool for send **Data Form** to **Google Sheet**
   8.4. Quem pode acessar: qualquer pessoa;
   8.5. Clique em implantar;
   8.6 Agora copie a URL gerada **App da Web** > **URL**;
- 9. No HTML, crie o formulário e adicione a classe como no **HTML** aqui do git;
- 10. Adicione o script javascript (dentro do html);
- 11. Adicione a **url** que pegamos no passo **8.6** dentro do script que está no **HTML**;
- 12. Teste;
+ 9. No HTML, crie o formulário e adicione o nome do formulário como no **HTML** aqui do git;
+ 10. Os campos devem ter o mesmo nome que os campos na planilha no passo **3** (não é necessário o campo timestamp)
+ 111. Adicione o script javascript (dentro do html);
+ 12. Adicione a **url** que pegamos no passo **8.6** dentro do script que está no **HTML**;
+ 13. Teste;
