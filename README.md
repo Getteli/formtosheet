@@ -1,4 +1,4 @@
-<p align="center"><a href="https://getteli.github.io/formtosheet/" target="_blank"><img src="https://getteli.github.io/apipagseguro/resource/images/sheet.png" width="100"></a></p>
+<p align="center"><a href="https://getteli.github.io/formtosheet/" target="_blank"><img src="https://getteli.github.io/formtosheet/resource/images/sheet.png" width="100"></a></p>
 
 <h2 align="center">
 	Script <b>JS</b> and <b>Google Apps</b>.
