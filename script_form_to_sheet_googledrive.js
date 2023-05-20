@@ -1,4 +1,4 @@
-var sheetName = 'Leads Anunciantes';
+var sheetName = 'leads_formulario';
 var scriptProp = PropertiesService.getScriptProperties();
 
 const intialSetup = (e = {}) =>
@@ -21,16 +21,14 @@ const doPost = (e = {}) =>
 		var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
 		var nextRow = sheet.getLastRow() + 1
 
-		const retailer = JSON.parse(contents);
+		const columns = JSON.parse(contents);
 
 		var newRow = sheet.appendRow([
-			new Date(),
-			retailer.email,
-			retailer.primeiro_nome,
-			retailer.ultimo_nome,
-			retailer.nome_empresa,
-			retailer.cargo,
-			retailer.telefone,
+			new Date(), // timestamp
+			columns.email,
+			columns.primeiro_nome,
+			columns.ultimo_nome,
+			columns.telefone,
 		])
 	
 		return ContentService

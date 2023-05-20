@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="resource/images/sheet.png" type="image/x-icon">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<title>Formulario para Planilha</title>
+	<style>
+		.form-sugestion
+		{
+			max-width: 320px;
+		}
+		.d-grid
+		{
+			display: grid;
+		}
+		.logo-douglas
+		{
+			display: inline-grid;
+			text-align: center;
+			color: #000 !important;
+		text-decoration: none !important
+		}
+
+		.logo-douglas > img
+		{
+		margin: 0 auto !important;
+		}
+
+		footer
+		{
+			display: flex !important;
+			justify-content: space-between;
+			width: 90%;
+			height: auto;
+			color: rgba(0,0,0, 0.8);
+			font-family: 'Dosis', sans-serif !important;
+			margin: 5em auto 0 auto;
+		}
+
+		footer > div > p
+		{
+			text-align: center;
+			line-height: 3;
+		}
+
+		@media screen and (max-width: 900px)
+		{
+			footer
+			{
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 765px)
+		{
+			footer
+			{
+				display: grid !important;
+				display: -ms-inline-grid !important;
+				display: -moz-inline-grid !important;
+				text-align: center;
+				width: fit-content;
+			}
+
+			footer > div
+			{
+				margin: 10px 0;
+			}
+		}
+	</style>
+	<script src="script_site.js" defer></script>
+</head>
+<body>
+	<div class="container">
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <center>
+                        <img src="resource/images/sheet.png" alt="FormToSheet" width="100px">
+                        <h1>FormToSheet</h1>
+						<h6 class="card-subtitle mb-2 text-muted">Submeter um formulário para planilha no drive</h6>
+                </center>
+                <p class="fs-6">Script em <b>JS</b> que leva os dados de um formulário html para uma planilha via <b>fetch</b>.</p>
+            </div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-12">
+				<center>
+					<form name="submit-to-google-sheet" class="form-sugestion row g-4 m-0" action="#">
+						<div class="col-12 my-3 d-grid text-left">
+							<label for="email">Email: </label>
+							<input type="email" name="email" id="email" class="form-control"/>
+						</div>
+						<div class="col-12 my-3 d-grid text-left">
+							<label for="primeiro_nome">Primeiro Nome: </label>
+							<input type="text" name="primeiro_nome" id="primeiro_nome" class="form-control"/>
+						</div>
+						<div class="col-12 my-3 d-grid text-left">
+							<label for="ultimo_nome">Ultimo nome: </label>
+							<input type="text" name="ultimo_nome" id="ultimo_nome" class="form-control"/>
+						</div>
+						<div class="col-12 my-3 d-grid text-left">
+							<label for="telefone">Telefone: </label>
+							<input type="text" name="telefone" id="telefone" class="form-control"/>
+						</div>
+						<div class="col-12 my-3 d-grid text-right">
+							<button type="submit" class="btn btn-primary text-uppercase">Enviar para planilha</button>
+						</div>
+					</form>
+				</center>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="">
+			<p>Veja este projeto no <a href="https://github.com/Getteli/apipagseguro"><b>GITHUB</b></a></p>
+		</div>
+		<div class="">
+			<a class="logo-douglas" href="https://getteli.github.io/Getteli">
+				<img src="https://getteli.github.io/Getteli/resources/midia/DG_logo.png" class="mx-auto mb-4 p-0" alt="DG" width="35px">
+				<span>Douglas A. Silva</span>
+			</a>
+		</div>
+		<div class="">
+			<p>criado pelo <b>Douglas Araujo Silva</b>, entre em contato para mais informação.</p>
+		</div>
+	</footer>
